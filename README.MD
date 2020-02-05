@@ -8,5 +8,11 @@ https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-sc
 - CSS
 - Javascript
 
+# Live Link
+https://macv93.github.io/rock-paper-scissors/
+
+# FYI
+- May include some bugs
+
 
 
