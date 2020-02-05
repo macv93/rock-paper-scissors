@@ -34,16 +34,10 @@ const game = () => {
           const computerNumber = Math.floor(Math.random() * 3);
           const computerChoice = computerOptions[computerNumber];
 
-
-          // Compare Hands
-          compareHands(this.textContent, computerChoice);
-            // Update Images
           playerHand.src = `${this.textContent}.png`;
-            computerHand.src = `${computerChoice}.png`;
-    
-
-            // console.log(this);
-    
+          computerHand.src = `${computerChoice}.png`;
+          compareHands(this.textContent, computerChoice);
+        
         });
       });
     };
@@ -80,6 +74,7 @@ const game = () => {
         if (playerChoice === 'rock'){
             if(computerChoice === 'scissors'){
                 winner.textContent = 'Player Wins';
+
                 pScore++;
                 updateScore();
                 return;
